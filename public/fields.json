@@ -1,0 +1,60 @@
+[
+  {
+    "type": "group",
+    "name": "content",
+    "label": "Content",
+    "tab": "CONTENT",
+    "children": [
+      {
+        "name": "title",
+        "label": "Portal title",
+        "type": "text",
+        "default": "My HubSpot Portal"
+      },
+      {
+        "name": "tagline",
+        "label": "Tagline",
+        "type": "text",
+        "display": "textarea",
+        "help_text": "Subtitle shown under the hero title.",
+        "default": "Customize this preview with Ctrl+Shift+Z, then replace StarterPage with your portal app."
+      },
+      {
+        "name": "show_feature_cards",
+        "label": "Show feature cards",
+        "type": "boolean",
+        "display": "toggle",
+        "default": true
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "name": "styles",
+    "label": "Styles",
+    "tab": "STYLE",
+    "children": [
+      {
+        "name": "accent_color",
+        "label": "Accent color",
+        "type": "color",
+        "default": {
+          "color": "#0091ae",
+          "opacity": 100
+        }
+      },
+      {
+        "name": "hero_style",
+        "label": "Hero style",
+        "type": "choice",
+        "display": "select",
+        "choices": [
+          ["gradient", "Gradient"],
+          ["minimal", "Minimal"],
+          ["bold", "Bold"]
+        ],
+        "default": "gradient"
+      }
+    ]
+  }
+]

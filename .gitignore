@@ -1,0 +1,18 @@
+node_modules/
+dist/
+.wphs/config/module-config.local.json
+.wphs/assets/
+.wphs/cache/
+.wphs/audit/
+.wphs/state/
+hubspot.config.yml
+.wphs/fixtures/hubspot-data.json
+.wphs/.kit-module-config
+.wphs/.kit-bootstrap.tsx
+.wphs/.kit-bootstrap-greenfield.tsx
+
+# Env files (secrets)
+.env
+.env.*
+!.env*.example
+.env.local

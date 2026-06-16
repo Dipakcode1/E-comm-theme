@@ -1,0 +1,8 @@
+{
+  "publishMode": "jsdelivr",
+  "github": "your-org/your-portal-cdn-mirror",
+  "gitRemote": "https://github.com/your-org/your-portal-cdn-mirror.git",
+  "cdnPathInRepo": "dist/cdn",
+  "defaultBranch": "main",
+  "_note": "Forks: point github/gitRemote at your jsDelivr mirror repo, or set cdn.mode custom in woodscli.json."
+}

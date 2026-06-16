@@ -1,0 +1,7 @@
+/**
+ * Shared Tailwind theme tokens — import from both main.dev.css and main.prod.css.
+ * Do not add prefix(dw) here; prefix is set only in main.prod.css.
+ */
+@theme {
+  --color-starter-accent: var(--starter-accent, #0091ae);
+}

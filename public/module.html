@@ -1,0 +1,37 @@
+{# Hybrid CDN — React app loads from jsDelivr; module.js is a thin bootstrap only. #}
+{% set in_cms_editor = is_in_editor or is_in_page_editor or is_in_previewer %}
+{% require_css %}
+<style>
+{% scope_css %}
+:root {
+  --starter-accent: {{ module.styles.accent_color.color|default('#0091ae') }};
+}
+p:not([class]) {
+  margin: 0;
+}
+ul, ol {
+  margin: 0;
+}
+{% end_scope_css %}
+</style>
+{% end_require_css %}
+<script>
+  window.hsInEditor = {{ in_cms_editor|lower }};
+  window.hubSpotData = {
+    title: {{ module.title|tojson }},
+    tagline: {{ module.tagline|tojson }},
+    show_feature_cards: {{ module.show_feature_cards|lower }},
+    accent_color: {{ module.styles.accent_color|tojson }},
+    hero_style: {{ module.styles.hero_style|tojson }},
+    assetBaseUrl: "__PORTAL_CDN_BASE__",
+    buildId: "__PORTAL_BUILD_ID__",
+    isInEditor: {{ in_cms_editor|lower }}
+  };
+</script>
+{% set portal_cdn_base = "__PORTAL_CDN_BASE__" %}
+{% set portal_vendor_script = "__PORTAL_VENDOR_FILE__" %}
+{% set portal_app_script = "__PORTAL_APP_FILE__" %}
+{# App styles ship in module.css (HubSpot editor cannot rely on external CDN CSS). #}
+{{ require_js(portal_cdn_base ~ '/' ~ portal_vendor_script, { position: 'footer', defer: true }) }}
+{{ require_js(portal_cdn_base ~ '/' ~ portal_app_script, { position: 'footer', defer: true }) }}
+<div id="app"></div>

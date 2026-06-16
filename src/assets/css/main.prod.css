@@ -1,0 +1,12 @@
+/**
+ * HUBSPOT / CDN BUILDS ONLY (wp build) — dw-prefixed Tailwind utilities.
+ *
+ * Never merge with main.dev.css:
+ * - Do not remove @source for .temp/ (prefix plugin + tailwind-content.js)
+ * - Do not add raw src/** @source (class names would not match prefixed JS)
+ */
+@import 'tailwindcss' prefix(dw);
+@import './tailwind.css.config.css';
+
+/* Prefixed utilities from tailwind-content.js (.temp) — must match prefix plugin on TSX */
+@source '../../../.temp/**/*.{js,jsx,ts,tsx}';

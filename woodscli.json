@@ -1,0 +1,36 @@
+{
+  "configVersion": 1,
+  "projectType": "module-hybrid-cdn",
+  "module": {
+    "name": "my-portal-module",
+    "uploadPath": "dw-modules/my-portal-module.module",
+    "outDir": "dist/MyPortalModule.Module"
+  },
+  "cdn": {
+    "mode": "jsdelivr",
+    "buildIdFile": ".module-build-id",
+    "mirror": "portal.cdn.json"
+  },
+  "entries": {
+    "app": "src/cdn/app-entry.ts",
+    "vendor": "src/cdn/vendor-entry.ts",
+    "hubspotBootstrap": "src/hubspot/bootstrap.ts",
+    "module": "src/hubspot/module-entry.tsx",
+    "localDev": "src/main.tsx"
+  },
+  "env": {
+    "tiers": [
+      "dev",
+      "stg",
+      "prod"
+    ]
+  },
+  "dev": {
+    "moduleConfigDir": ".wphs",
+    "adapter": "./wphs.adapter.ts",
+    "fieldsJson": "public/fields.json"
+  },
+  "scaffold": {
+    "router": "hash"
+  }
+}

@@ -1,0 +1,16 @@
+/**
+ * LOCAL DEV ONLY (wp dev) — unprefixed Tailwind utilities.
+ *
+ * Never merge with main.prod.css:
+ * - Do not add dw prefix on this file
+ * - Do not point @source at .temp/ only (that is for HubSpot builds)
+ */
+@import 'tailwindcss';
+@import './tailwind.css.config.css';
+
+/* Kit dev-module-config — paths relative to this file (src/assets/css/) */
+@source '../../../.wphs/.kit-module-config/**/*.{ts,tsx}';
+@source '../../../.wphs/.kit-bootstrap.tsx';
+@source '../../../.wphs/.kit-bootstrap-greenfield.tsx';
+@source '../../../src/**/*.{ts,tsx}';
+@source '../../../node_modules/@woodsportal/hubspot-kit/src/dev-module-config/**/*.{ts,tsx}';

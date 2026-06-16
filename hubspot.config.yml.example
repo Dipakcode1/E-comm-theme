@@ -1,0 +1,10 @@
+# HubSpot CLI personal access key — copy to hubspot.config.yml (gitignored).
+# Generate at: https://app.hubspot.com/l/personal-access-key
+# Docs: https://developers.hubspot.com/docs/cms/developer-reference/local-development-cli
+
+defaultPortal: your-portal-id
+portals:
+  - name: staging
+    portalId: 12345678
+    authType: personalaccesskey
+    personalAccessKey: YOUR_PAT_HERE

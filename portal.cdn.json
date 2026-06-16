@@ -1,0 +1,7 @@
+{
+  "publishMode": "jsdelivr",
+  "github": "your-org/your-portal-cdn-mirror",
+  "gitRemote": "https://github.com/your-org/your-portal-cdn-mirror.git",
+  "cdnPathInRepo": "dist/cdn",
+  "defaultBranch": "main"
+}

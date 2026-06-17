@@ -1,0 +1,8 @@
+export { ProductDetailShell } from './product-detail-shell'
+export { ProductDetailNavbar } from './product-detail-navbar'
+export { ProductDetailBreadcrumb } from './product-detail-breadcrumb'
+export { ProductDetailGallery } from './product-detail-gallery'
+export { ProductDetailPurchasePanel } from './product-detail-purchase-panel'
+export { ProductDetailDetailsSection } from './product-detail-details-section'
+export { ProductDetailRelated } from './product-detail-related'
+export { ProductDetailFooter } from './product-detail-footer'

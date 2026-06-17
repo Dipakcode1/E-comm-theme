@@ -4,7 +4,6 @@
     "jsx": "react-jsx",
     "module": "ESNext",
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
-    "types": ["vite/client"],
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
@@ -16,5 +15,5 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "wphs.adapter.ts"]
+  "include": ["src/**/*.ts", "src/**/*.tsx", "wphs.adapter.ts", "src/vite-env.d.ts"]
 }

@@ -1,7 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router'
 
-import { StarterHomePage } from '@/features/starter'
+import { StorefrontShell } from '@/components'
 
 export const Route = createFileRoute('/')({
-  component: StarterHomePage,
+  component: StorefrontShell,
 })

@@ -1,4 +1,4 @@
-import { SectionCard } from '@/components/layout/section-card'
+import { SectionCard } from '@/components/common'
 
 import {
   DEV_WORKFLOW,

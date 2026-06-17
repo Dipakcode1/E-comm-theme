@@ -1,4 +1,4 @@
-import { StarterShell } from '@/components/layout/starter-shell'
+import { StarterShell } from '@/components/starter'
 
 import { StarterGuidePage } from './starter-guide-page'
 import { StarterHome } from './starter-home'
